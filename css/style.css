@@ -1,0 +1,101 @@
+:root{
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background: hsl(217, 54%, 11%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 350px;
+    height: 630px;
+    background: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 9px 26px 10px rgba(0,0,0,0.87);
+    
+}
+
+.card__img{
+    align-self: center;
+    width: 90%;
+    margin: 20px;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.card__view{
+    background:hsla(178, 100%, 50%, 0.247);
+    position: absolute;
+    margin: 18.5px;
+    width:313px;
+    height:317px;
+    opacity: 0;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+}
+.card__view:hover{
+    opacity: 1;
+    cursor: pointer
+}
+
+.card__title{
+    margin: 0 6%;
+    font-size: 1.5em;
+    transition: all 0.3s
+}
+.card__title:hover, .card__jules:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer
+}
+.card__subtitle{
+    margin: 20px 6%;
+    font-size: 18px;
+    font-weight: thin;
+    line-height: 1.3em;
+    color: hsl(215, 51%, 70%)
+}
+.card__details{
+    margin: 10px 6%;
+    display: flex;
+    width: 88%;
+    justify-content: space-between;
+}
+.card__details-price{
+    background: url(../images/icon-ethereum.svg) no-repeat;
+    color: hsl(178, 100%, 50%);
+    padding-left: 15px
+}
+.card__details-time{
+    background: url(../images/icon-clock.svg) no-repeat;
+    padding-left: 25px;
+    color: hsl(215, 51%, 70%)
+}
+.card__creation{
+    background: url(../images/image-avatar.png) no-repeat;
+    background-size: 15%;
+    background-position-y: 15px; 
+    margin: 30px 6%;
+    width: calc(88% - 53px);
+    color: hsl(215, 51%, 70%);
+    border-top: solid 1px hsl(215, 51%, 70%);
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 53px;
+}
+.card__jules{
+    color: white;
+    transition: all 0.3s
+}
+.attribution { font-size: 11px; text-align: center; } 
+.attribution a { color: hsl(228, 45%, 44%); }
